@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0F84AB81AC0FCFB006D7306 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F84AB71AC0FCFB006D7306 /* CustomTableViewCell.swift */; };
 		F70967D01AA8FF01000839C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70967CF1AA8FF01000839C5 /* LoginViewController.swift */; };
 		F70967D21AA91600000839C5 /* AddPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70967D11AA91600000839C5 /* AddPost.swift */; };
 		F74C871E1AA9FAC60057BB4D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74C871D1AA9FAC60057BB4D /* PostViewController.swift */; };
 		F77956941AA98D3500BD42C9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77956931AA98D3500BD42C9 /* Post.swift */; };
+		F78165BB1ABA13D400FE3159 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78165BA1ABA13D400FE3159 /* Reply.swift */; };
+		F78165BD1AC06E4700FE3159 /* ReplyInPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78165BC1AC06E4700FE3159 /* ReplyInPost.swift */; };
+		F78165BF1AC1299C00FE3159 /* AddReply.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78165BE1AC1299C00FE3159 /* AddReply.swift */; };
 		F797CD721A93E41900DA9509 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797CD711A93E41900DA9509 /* AppDelegate.swift */; };
 		F797CD741A93E41900DA9509 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797CD731A93E41900DA9509 /* CalendarViewController.swift */; };
 		F797CD761A93E41900DA9509 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797CD751A93E41900DA9509 /* ForumViewController.swift */; };
@@ -20,6 +24,10 @@
 		F797CD8A1A93E41A00DA9509 /* ClassiCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797CD891A93E41A00DA9509 /* ClassiCalTests.swift */; };
 		F797CD941A9B897000DA9509 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797CD931A9B897000DA9509 /* ChattingViewController.swift */; };
 		F797CD961A9F6ECD00DA9509 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797CD951A9F6ECD00DA9509 /* PersonViewController.swift */; };
+		F7BAC6F71ACB6F8C00E24D1F /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC6F61ACB6F8C00E24D1F /* ChatDetailViewController.swift */; };
+		F7BAC6F91ACB840A00E24D1F /* ChatCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC6F81ACB840A00E24D1F /* ChatCustomTableViewCell.swift */; };
+		F7BAC6FB1ACC633C00E24D1F /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC6FA1ACC633C00E24D1F /* Chat.swift */; };
+		F7BAC6FD1ACCFAF000E24D1F /* ForumSelectCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BAC6FC1ACCFAF000E24D1F /* ForumSelectCourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0F84AB71AC0FCFB006D7306 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		F70967CF1AA8FF01000839C5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F70967D11AA91600000839C5 /* AddPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPost.swift; sourceTree = "<group>"; };
 		F74C871D1AA9FAC60057BB4D /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		F77956931AA98D3500BD42C9 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F78165BA1ABA13D400FE3159 /* Reply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
+		F78165BC1AC06E4700FE3159 /* ReplyInPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyInPost.swift; sourceTree = "<group>"; };
+		F78165BE1AC1299C00FE3159 /* AddReply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReply.swift; sourceTree = "<group>"; };
 		F797CD6C1A93E41900DA9509 /* ClassiCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassiCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F797CD701A93E41900DA9509 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F797CD711A93E41900DA9509 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +62,10 @@
 		F797CD891A93E41A00DA9509 /* ClassiCalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassiCalTests.swift; sourceTree = "<group>"; };
 		F797CD931A9B897000DA9509 /* ChattingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
 		F797CD951A9F6ECD00DA9509 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		F7BAC6F61ACB6F8C00E24D1F /* ChatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		F7BAC6F81ACB840A00E24D1F /* ChatCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCustomTableViewCell.swift; sourceTree = "<group>"; };
+		F7BAC6FA1ACC633C00E24D1F /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F7BAC6FC1ACCFAF000E24D1F /* ForumSelectCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumSelectCourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +110,20 @@
 				F797CD711A93E41900DA9509 /* AppDelegate.swift */,
 				F797CD731A93E41900DA9509 /* CalendarViewController.swift */,
 				F797CD931A9B897000DA9509 /* ChattingViewController.swift */,
+				F7BAC6F61ACB6F8C00E24D1F /* ChatDetailViewController.swift */,
 				F797CD951A9F6ECD00DA9509 /* PersonViewController.swift */,
 				F70967CF1AA8FF01000839C5 /* LoginViewController.swift */,
 				F797CD751A93E41900DA9509 /* ForumViewController.swift */,
 				F74C871D1AA9FAC60057BB4D /* PostViewController.swift */,
 				F70967D11AA91600000839C5 /* AddPost.swift */,
+				F78165BE1AC1299C00FE3159 /* AddReply.swift */,
 				F77956931AA98D3500BD42C9 /* Post.swift */,
+				F78165BA1ABA13D400FE3159 /* Reply.swift */,
+				F78165BC1AC06E4700FE3159 /* ReplyInPost.swift */,
+				F7BAC6FC1ACCFAF000E24D1F /* ForumSelectCourse.swift */,
+				C0F84AB71AC0FCFB006D7306 /* CustomTableViewCell.swift */,
+				F7BAC6F81ACB840A00E24D1F /* ChatCustomTableViewCell.swift */,
+				F7BAC6FA1ACC633C00E24D1F /* Chat.swift */,
 				F797CD771A93E41900DA9509 /* Main.storyboard */,
 				F797CD7A1A93E41900DA9509 /* Images.xcassets */,
 				F797CD7C1A93E41900DA9509 /* LaunchScreen.xib */,
@@ -234,11 +258,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74C871E1AA9FAC60057BB4D /* PostViewController.swift in Sources */,
+				F7BAC6F71ACB6F8C00E24D1F /* ChatDetailViewController.swift in Sources */,
 				F70967D01AA8FF01000839C5 /* LoginViewController.swift in Sources */,
 				F797CD961A9F6ECD00DA9509 /* PersonViewController.swift in Sources */,
 				F797CD761A93E41900DA9509 /* ForumViewController.swift in Sources */,
+				F7BAC6FD1ACCFAF000E24D1F /* ForumSelectCourse.swift in Sources */,
+				F7BAC6FB1ACC633C00E24D1F /* Chat.swift in Sources */,
+				F7BAC6F91ACB840A00E24D1F /* ChatCustomTableViewCell.swift in Sources */,
 				F77956941AA98D3500BD42C9 /* Post.swift in Sources */,
 				F797CD721A93E41900DA9509 /* AppDelegate.swift in Sources */,
+				C0F84AB81AC0FCFB006D7306 /* CustomTableViewCell.swift in Sources */,
+				F78165BB1ABA13D400FE3159 /* Reply.swift in Sources */,
+				F78165BD1AC06E4700FE3159 /* ReplyInPost.swift in Sources */,
+				F78165BF1AC1299C00FE3159 /* AddReply.swift in Sources */,
 				F797CD941A9B897000DA9509 /* ChattingViewController.swift in Sources */,
 				F70967D21AA91600000839C5 /* AddPost.swift in Sources */,
 				F797CD741A93E41900DA9509 /* CalendarViewController.swift in Sources */,
