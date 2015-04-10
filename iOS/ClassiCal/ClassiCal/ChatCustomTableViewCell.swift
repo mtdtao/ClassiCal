@@ -13,6 +13,11 @@ class ChatCustomTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var chatContent: UILabel!
+    @IBOutlet weak var chatName: UILabel!
+    @IBOutlet weak var chatReport: UILabel!
+    
+    @IBOutlet weak var myName: UILabel!
+    
     
     @IBOutlet weak var myReply: UILabel!
     

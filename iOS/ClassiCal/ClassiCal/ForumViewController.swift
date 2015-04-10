@@ -10,6 +10,7 @@ import UIKit
 
 class ForumViewController: UITableViewController, UINavigationControllerDelegate{
     
+    
     var forumList = [
         Post(title: "When is the 1st hw due?", content: "It is not on course page or blackboard!! and let me test how long can the text field be and what will happen")
     ]
@@ -20,28 +21,19 @@ class ForumViewController: UITableViewController, UINavigationControllerDelegate
     var courseList = ["CS250", "CS307"]
     
     var forumChose = "CS250"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func unwindToForum(segue: UIStoryboardSegue) {
         if segue.identifier == "DoneItem" {
             let addPost = segue.sourceViewController as AddPost
             if let newPost = addPost.newItem {
                 forumList += [newPost]
-                
                 let indexPath = NSIndexPath(forRow: forumList.count - 1, inSection: 0)
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-                //forumList = forumList2
-                //viewDidLoad()
             }
+        } else if segue.identifier == "CourseSelected" {
+            let courseSelect = segue.sourceViewController as ForumSelectCourse
+            forumChose = courseSelect.courseChose
+            println("user choose \(forumChose)")
         }
     }
     
@@ -79,7 +71,11 @@ class ForumViewController: UITableViewController, UINavigationControllerDelegate
         
     }
 
-    
+    override func viewDidLoad() {
+        //self.title = forumChose
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
 
 }
 

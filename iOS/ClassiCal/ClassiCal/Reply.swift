@@ -18,6 +18,6 @@ class Reply: NSObject {
         self.name = name
         self.content = content
         self.time = time
-        self.like = 0
+        self.like = Int(arc4random_uniform(7))
     }
 }

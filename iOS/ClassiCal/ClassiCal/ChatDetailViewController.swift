@@ -13,7 +13,7 @@ class ChatDetailViewController: UIViewController, UITableViewDataSource, UITable
     
     var chatDetail : [Chat] = [
         Chat(user: "John", content: "wow", time: "11"),
-        Chat(user: "Time", content: "It's amazing", time: "12")
+        Chat(user: "Tim", content: "It's amazing", time: "12")
     ]
     
     @IBOutlet weak var chatContent: UITableView!
@@ -32,15 +32,7 @@ class ChatDetailViewController: UIViewController, UITableViewDataSource, UITable
         
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chatDetail.count
@@ -51,10 +43,16 @@ class ChatDetailViewController: UIViewController, UITableViewDataSource, UITable
         let cell = tableView.dequeueReusableCellWithIdentifier("chatcell") as ChatCustomTableViewCell
         if self.chatDetail[indexPath.row].isMe {
             cell.chatContent!.text = ""
+            cell.chatName!.text = ""
+            cell.chatReport!.text = ""
+            cell.myName!.text = "Me"
             cell.myReply!.text = self.chatDetail[indexPath.row].content
         } else {
             cell.chatContent!.text = self.chatDetail[indexPath.row].content
+            cell.chatName!.text = self.chatDetail[indexPath.row].user
             cell.myReply!.text = ""
+            cell.myName!.text = ""
+            
         }
 
         return cell

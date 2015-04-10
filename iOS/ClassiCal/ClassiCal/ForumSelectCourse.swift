@@ -29,17 +29,13 @@ class ForumSelectCourse: UITableViewController {
         return cell
     }
     
-//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        <#code#>
-//    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        println("o ye")
+        if segue.identifier == "CourseSelected" {
+            let indexPath = tableView.indexPathForSelectedRow()
+            courseChose = courseList[indexPath!.row]
+        }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 }
